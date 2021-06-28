@@ -1,0 +1,41 @@
+Variables:
+Las variables son una forma de guardar valores para poder ser usadas luego. Las variables tienen una forma especifica que hay que respetar para poderlas crear
+Primero, se debe poner lo que se llaman palabras clave o key words "var", "let" o "const", seguido por el nombre de la variable y le asignamos un valor con el signo "=" (igual).
+Para que se entienda mejor usaremos un ejemplo y declararemos una variable que se llame Henry y que tenga como valor "henry challenge".
+ Ejemplo:   var Henry = "henry challenge";
+Entonces cada vez que invoquemos la variable Henry nos arrojara el valor henry challenge.
+
+Strings:
+Los strings son un tipo de dato y se conforman como una cadena de caracteres encerrados entre comillas. Con el ejemplo anterior se puede ver como el valor de la variable Henry
+es un string. Existen palabras reservadas que no pueden ser un string, como por ejemplo la palabra clave var.
+
+Funciones: 
+Las funciones se denominan como un tipo de objetos seguin Java Script. Se utilizan para poder realizar distintos tipos de acciones a traves de un codigo que se escribe dentro de ellas y repetirlo cuantas veces querramos.
+Hay tres formas de poder escribir una funcion pero nos centraremos en una de ellas descripta a continuación:
+    function nombreDeLaFuncion (){};
+Function es una palabra reservada para las funciones, luego se escribe el nombre de la funcion, los parentesis se usan para invocar la funcion y las llaves encierran el codigo que nosotros querramos poner.
+Hay que tener en cuenta que dentro de los parentesis se les puede pasar argumentos que serán utilizados como variables dentro de las funciones.
+
+Declaración Return:
+Esta declaración se utiliza dentro del codigo de la función para indicar el valor que se desee arrojar de la misma.
+A su vez, una vez que la función retorna, esta se detiene y devuelve lo especificado.
+
+Declaraciones if:
+Este tipo de declaraciones son utilizados para verificar situaciones y correspondiente a la que sea verídica, arrojar un valor.
+Ejemplo: si se desea saber si una persona puede o no manejar respecto a su edad hacemos la siguiente funcion
+
+      function puedeManejar (edad){
+          if (edad>18) {
+              return "Puede manejar";
+          }
+          return "No puede manejar";
+      }
+
+Valores Booleanos: Estos valores son true o false, verdadero o falso. El valor se explica desde la logica binaria en donde existen dos opciones, activar o desactivar, verdadero o falso.
+En Java Script se utiliza para asignarle valor verdadero ofalso a algo o aluna situación.
+
+Ejemplo: 
+22<80 = false
+5/5 = 2; false.
+1*1 = 1 ; true
+
