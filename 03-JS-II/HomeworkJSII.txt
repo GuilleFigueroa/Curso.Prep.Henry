@@ -1,0 +1,23 @@
+Bucle for:
+El bucle for es una expresión que se utiliza generalmente para buscar datos segun las condiciones que se especifiquen
+Esto es de gran ayuda porque nos permite analizar muchisimos datos de forma sencilla y eficaz. 
+La sintaxis de un bucle for se conforma de la palabra clave for, la declaración de variable, un condicionante(el codigo se ejecutara mientras esta condición de cumpla) y el incremento
+por el cual nosotros querramos aumentar la variable que por lo general es de uno en uno y se escribe con los signos ++.
+ejemplo: 
+for ( var i=0 ; i<110 ; i++) {
+    console.log(i)
+}
+
+Este ejemplo imprimira de uno en uno los numeros a partir del 0 hasta el 110 de forma automática sin que lo tengamos que hacer de forma manual.
+Este es uno de los muchos usos que se les puede dar a los bucles for, pero la idea principal esta aclarada y es su sencillez y eficacia para buscar datos específicos.
+
+
+Operadores Lógicos:
+
+Los operadores lógicos se usan para combinar dos expresiones de igualdad y preguntar si ambas son verdaderas o falsas, o si alguna de las dos es verdadera o falsa.
+El primer operador lógico es && y en inglés de denomina and, lo que significa y ( de añadir). En este caso la expresión sera verdadera si ambos condiciones son verdaderas y falsa si alguna de las dos es falsa.
+Ejemplo de &&: if ( i > 2 && i%2 == 0){}. este ejemplo usado en una expresión if indica que si ambas condiciones dentro del argumento son verdaderas se aplicara el codigo que se encuentre entre llaves.
+Otro operador logico es el || que significa or en ingles y se traduce como o (de selección) en castellano. Funciona a la inversa que el operador && y sera verdadero si es que alguna de las condiciones es verdadera. 
+Por lo que al ejemplo anterior solo se le reemplaza el && por el || y el codigo se activara si alguna de las condiciones se cumple. La unica forma de que no corra el código es si ambas expresiones son falsas.
+Por ultimo tenemos el operador !. Este operador significa NOT en inglés y se traduce como no (de negación) al castellano. Simplemente lo que hace es devolver el valor booleao opuesto de lo que se le pasa.
+ejemplo de ! NOT: !true // false , se invierte el valor true y lo convierte en false.
