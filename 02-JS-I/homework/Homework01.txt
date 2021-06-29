@@ -35,7 +35,7 @@ Valores Booleanos: Estos valores son true o false, verdadero o falso. El valor s
 En Java Script se utiliza para asignarle valor verdadero ofalso a algo o aluna situación.
 
 Ejemplo: 
-22<80 = false
-5/5 = 2; false.
-1*1 = 1 ; true
+22<80 == false
+5/5 == 2; false.
+1*1 == 1 ; true
 
