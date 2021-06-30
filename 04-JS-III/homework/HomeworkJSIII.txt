@@ -1,0 +1,25 @@
+Arrays:
+Los arrays o arreglos son un tipo de datos no nativos de Javascript que son de gran utilidad para los desarrolladores.
+Los arreglos pueden contener todo tipo de datos nativos como booleanos, numeros o strings, pero tambien puede contener funciones o incluso otros arreglos en su interior. 
+Esto nos permite crear listas donde podemos almacenar mucha información como si fuera una simple variable.
+
+ej: var arregloNuevo= [1, 1, "gato", function esPar(){}, null, true, [1, 1, 2, 34, "hola"], undefined]
+Entonces cada vez que usemos la variable arregloNuevo sabemos que contiene toda esa información.
+
+Los arreglos tienen metodos que podemos usar para trabajar con ellos.
+por ejemplo, si queremos acceder a algun dato específico dentro del array lo invocamos de la siguiente forma: 
+ej: queremos saber que elemento se aloja en el indice 4 del arreglo (se empieza a contar desde cero) por lo que hacemos
+>>> arregloNuevo[4] // null. <<< 
+
+Otro metodo muy util es el array.length que nos permite saber cuantos elementos posee un arreglo.
+>>> arregloNuevo.length // 8 <<< 
+
+Array push y pop: Estos metodos los utilizamos cuando queremos añadir un nuevo elemento al ultimo lugar del arreglo (push) 
+o queremos sacar el ultimo elemento del arreglo y eliminarlo (pop).
+
+ejemplos: arregloNuevo.push(Guille) // [1, 1, "gato", function esPar(){}, null, true, [1, 1, 2, 34, "hola"], undefined, Guille]
+
+          arregloNuevo.pop() // [1, 1, "gato", function esPar(){}, null, true, [1, 1, 2, 34, "hola"], undefined].
+
+Ademas de esto podemos usar bucles for para recorrer los arreglos que sean demasiado extensos y asi poder acceder a 
+datos precisos de forma sencilla y automática.       
