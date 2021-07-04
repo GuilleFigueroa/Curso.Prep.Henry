@@ -1,0 +1,85 @@
+Objetos y propiedades: 
+Un objeto es una colección de propiedades y una propiedad es una asociación entre un nombre (o clave) y un valor.
+Los objetos se pueden parecer a las matrices en que pueden almacenar todo tipo de información, sin embargo, a diferencia de 
+las matrices, los objetos contienen información de una sola cosa. 
+Se definen como una variable y se asignan las propiedades entre llaves. Dentro de las llaves, se escriben los pares clave - valor, mediante dos puntos y 
+una vez definido separarlos por comas.
+Ejemplo: 
+var miPersona = {
+    nombre : "Guillermo",
+    ocupación : "administrativo contable",
+    edad : 26;
+    deporteFavorito: "fútbol",
+}
+
+Los valores de las propiedades pueden ser de cualquier tipo de datos, desde un string hasta funciones y booleanos.
+Por otro lado, las claves son únicas, es decir que no se puede repetir el nombre, no asi los valores que pueden repetirse en diferentes claves.
+
+Acceder a los valores:
+Para poder acceder a la información que contienen los objetos se usa la notación de brackets o de puntos, cada una 
+con sus ventajas y desventajas
+ejemplos:
+para acceder al valor del nombre del objeto con DOT notation >>> miPersona.nombre; // Guillermo <<<
+Brackets notation >>> miPersona ["nombre"] // Guillermo <<<
+La DOT notation tiene la ventaja de ser una forma ágil de acceder a los valores.
+Por otro lado la notación con brackets a pesar de no ser tan ágil, tiene la ventaja de que se puede usar para 
+invocar variables y recorrer los objetos con un bucle for... in.
+
+Bucle for... in:
+Un bucle for... in es muy similar a un bucle for convencional. La diferencia está en que un bucle for común 
+se usa para recorrer matrices con índices numéricos mientras que un bucle for... in se utiliza para recorrer objetos
+que no tienen indices numéricos sino pares de clave-valor. 
+La sintaxis de un bucle for...in tambien difiere un poco. Se comienza escribiendo for y entre paréntesis 
+se declara una variable, la palabra clave in, y el nombre del objeto en el cual correrá el bucle.
+Este tipo de bucle nos permite iterar una variable sobre todo el objeto. Se puede usar esta clave y la notación de 
+corchetes en nuestro bucle for para acceder al valor asociado con esta clave.
+ejemplo:
+
+
+var miPersona = {
+    nombre : "Guillermo",
+    ocupación : "administrativo contable",
+    edad : 26;
+    deporteFavorito: "fútbol",
+}
+
+
+for ( var clave in miPersona){      
+    console.log(clave);
+    console.log(miPersona[clave]);
+}
+///
+nombre;
+"Guillermo";
+ocupación;
+"administrativo contable";
+edad;
+26;
+deporteFavorito;
+"fútbol";
+
+Métodos:
+En los objetos, los valores se pueden establecer en funciones. Las funciones guardadas en un objetose deominan
+métodos. Algunos ejemplos de métodos utilizados hasta ahora son el .length el .po. o el .push.
+Se puede establecer un nombre para una clave y una función como valor y se podrá invocar a este método usando 
+DOT notation y paréntesis finales . Tambien se puede llamar al método con argumentos como lo haríamos con una función normal.
+
+Ejemplo:
+ 
+var nuevoUsuario={                         // decirHola es un método de nuevoUsuario.
+    nombre: "Nicolás",
+    decirHola: function(){
+        console.log("Hola como estás?");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
