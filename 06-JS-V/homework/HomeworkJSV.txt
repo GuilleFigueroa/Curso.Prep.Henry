@@ -1,0 +1,58 @@
+Prototype:
+El prototype o prototipo es la forma en que se pueden atribuir métodos a las clases y que a partir de esto 
+puedan dar acceso a cada objeto de esa clase. Es decir que se crean métodos en el prototipo de una clase para que los objetos dentro
+de esa clase puedan utilizarlos.
+Esto es muy funcional a la hora de ahorrar código y de eficientizar el mecanismo ya que si tenemos muchos objetos
+en una clase y queremos modificar un mpetodo que todos comparten, no tenemos que ir cambiandolo uno por uno y 
+directamente modificamos el método en el prototype de la misma.
+ejemplo:
+function Auto(color, marca){      /// clase
+    this.marca=marca;
+}
+
+Auto.prototype.descripcion = function(){
+    return "El auto es color " + this.color + "de marca " + this.marca;
+}
+
+Es asi que se define el método descripción en el prototipo y cada auto que se genere con la palabra clave new
+tendra este método incorporado.
+
+> var nuevoAuto = new Auto(negro,bmw);
+> nuevoAuto.descripcion;
+< "El auto es negro de marca bmw"
+
+Como se ve en el ejemplo, nuevoAuto fue creado a partir de la función constructora Auto que tiene el método
+descripción, por lo que nuevoAuto puede utilizarlo.
+
+Otra cosa importante es tener en claro que es lo que hace la palabra clave this.
+En este caso this hace referencia al objeto Auto que es una clase, y como luego describimos el prototipo 
+de Auto con el método descripción, this hace referencia a Auto.
+Esto se traduce en que cuando creamos un nuevo objeto con la clase Auto se puedan pasar los parametros por argumento
+y que puedan funcionar los métodos con estos argumentos como vimos en el ejemplo.
+
+
+
+_Constructors_ (de Clases):
+
+La función constructora de clases se vio un poco en el ejemplo del concepto anterior prototype ya que el mecanismo
+haciea referencia a una clase.
+En concreto los constructors son funciones constructoras de objetos que se definen como clases.
+Las clases son objetos que contienen un grupo de objetos con similares propiedades. Es decir, una clase es una plantilla
+que define las propiedades que van a tener los objetos creados a partir de ella, de modo que no se tengan que 
+escribir literalmente objeto por objeto. Esto ayuda a que el codigo sea mas liviano y ademas es una forma mas 
+facil de crear objetos similares.
+Ejemplo:
+function Caballos(aras, pelaje, anios){
+    this.aras= aras;
+    this.pelaje= pelaje;
+    this.anios= anios
+}
+
+Esta plantilla servira para la creación de distintos objetos con las propiedades que se definieron en la clase, 
+es decir que se usará para cuando deseemos crear un nuevo objeto que sea caballo. 
+Esto lo hacemos con la palabra clave new. 
+Ejemplo:
+var miCaballo = new Caballos(remonta, tordo, 5);
+
+
+
