@@ -1,0 +1,24 @@
+Funciones callbacks:
+
+Se parte de la premisa de que las funciones en javascript son consideradas first class. Esto significa que las funciones
+son tratadas como objetos y poder ser pasadas como aargumentos a otras funciones, retornarlas como resultado
+de otras funciones y guardarlas en variables u otra estructura de datos..
+Es asi, que una función callback es aquella que se pasa como argumento en otra funcion. Esta es una convención 
+de JS en cuanto a su definición.
+Ejemplo:
+
+function decirHola(usuario){
+    return "Hola " + usuario;
+}
+
+function crearSaludo(usuario, cb){
+    return cb(usuario);
+}
+
+crearSaludo("Daniel", decirHola) // "Hola Daniel"
+
+Este es un eejemplo de varios en los cuales podemos utilizar funciones como argumentos .
+
+
+
+
